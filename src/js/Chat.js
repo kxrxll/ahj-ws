@@ -93,6 +93,7 @@ export default class Chat {
   }
 
   drawMessages(evt) {
+    this.input.disabled = false;
     let selected = '';
     if (evt) {
       const users = Array.from(this.section.querySelectorAll('.user'));
