@@ -10,7 +10,7 @@ export default class Chat {
     this.usersSection = el.querySelector('.users');
     this.input = el.querySelector('.newmessage');
     this.field = el.querySelector('.chatfield');
-    this.ws = new WebSocket('ws://chat-kxrxll.herokuapp.com/ws');
+    this.ws = new WebSocket('wss://chat-kxrxll.herokuapp.com/ws');
   }
 
   async init() {
